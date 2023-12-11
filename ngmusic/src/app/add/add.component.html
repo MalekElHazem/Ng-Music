@@ -1,0 +1,45 @@
+
+<div class="row mt-5 justify-content-center">
+
+    <div class="col-sm-6 col-md-4">
+        <input [(ngModel)]="song.name" type="text" class="form-control m-1" placeholder="Name">
+    </div>
+</div>
+<div class="row mt-5 justify-content-center">
+
+    <div class="col-sm-6 col-md-4">
+        <input [(ngModel)]="song.artist" type="text" class="form-control m-1" placeholder="Artist">
+
+    </div>
+</div>
+<div class="row mt-5 justify-content-center">
+
+    <div class="col-sm-6 col-md-4">
+        <input [(ngModel)]="song.album" type="text" class="form-control m-1" placeholder="Album">
+
+    </div>
+</div>
+<div class="row mt-5 justify-content-center">
+
+    <div class="col-sm-6 col-md-4">
+        <input [(ngModel)]="song.year" type="Number" class="form-control m-1" placeholder="Year">
+
+    </div>
+</div>
+
+<div class="row mt-5 justify-content-center">
+
+    <div class="col-sm-6 col-md-4">
+        <input [(ngModel)]="song.image" type="text" class="form-control m-1" placeholder="Image url">
+
+    </div>
+</div>
+<div class="row mt-5 justify-content-center">
+
+    <div class="col-sm-6 col-md-4">
+        <button (click)="addSong()" (click)="showSweetAlert()" class="btn form-control m-1 text-light">Create</button>
+    </div>
+
+</div>
+
+

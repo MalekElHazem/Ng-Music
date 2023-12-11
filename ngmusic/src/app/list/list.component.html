@@ -1,0 +1,34 @@
+<div class="row mt-5" id="htmlData">
+    
+    <div class="col-3 mt-4" *ngFor="let item of songs">
+        <div class="card p-1 bg-dark">
+            <div class="card-image">
+                <img class="w-100 h-100" [src]="item.image" alt="">
+            </div>
+            <div class="card-body text-light">
+                <h2>{{item.name}}</h2>
+                <p>{{item.artist}}</p>
+                <p>{{item.album}}</p>
+                <p>{{item.year}}</p>
+            </div>
+
+            <div class="card-footer">
+                <div class="row  justify-content-center">
+                    <div class="col-sm-6 col-md-4">
+                        <button [routerLink]="['/update', item.id]" class="btn btn-info">Edit</button>
+                
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <button (click)="deleteSong(item.id)" class="btn btn-danger">Delete</button>
+
+                        
+                    </div>
+                    
+  
+                </div>
+        </div>
+        
+    </div>  
+</div>
+    <button (click)="openPDF()" class="btn btn-success">Generate PDF</button>   
+
